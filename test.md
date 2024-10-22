@@ -29,6 +29,8 @@ promotes:
 // after the feature is completed if a subsequent issue is field to track promotion
 // of this feature to a higher stability level
 promoted-by:
+OpenAPIVersion: 3.1
+MicroProfileOpenAPIVersion: 4.0
 ---
 = <INSERT TITLE HERE>
 :author:            Your Name
@@ -38,6 +40,11 @@ promoted-by:
 :idprefix:
 :idseparator:       -
 
+{%set test = foo %} 
+
+Upgrade {{ OpenAPIVersion }} to version {{ MicroProfileOpenAPIVersion }} by {{ foo }}.
+
+See [Release Notes][release_notes]
 __<The entire document should be one to two pages long. We will write each analysis document as if it is a conversation with a future developer. This requires a good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments.>__
 
 == Overview
@@ -159,3 +166,6 @@ __<Describe how this feature will be documented or illustrated. Generally a feat
 __<Draft verbiage for up to a few sentences on the feature for inclusion in the Release Note blog article for the release that first includes this feature.__
 __Example article: https://www.wildfly.org/news/2024/01/25/WildFly31-Released/.__
 __This content will be edited, so there is no need to make it perfect or discuss what release it appears in.>__ 
+
+[spec]: https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html
+[release_notes]: [https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html#incompatible_changes_40](https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html#release_notes_40)
