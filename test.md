@@ -1,36 +1,12 @@
 ---
-// Add any category for this proposal as a yaml list, e.g.
-// - core
-// - management
-// if missing, add it to _data/wildfly-categories and use its id
 categories:
-// Specify the stability level of the feature.
-// Values can be one of: experimental preview community default
-stability-level:
-// Specify the Feature Development tracker issue for the feature.
-// This must be an issue tracked in https://github.com/orgs/wildfly/projects/7/views/1.
-// To create a Feature Development tracker issue, go to  https://github.com/wildfly/wildfly-proposals/issues/new/choose
-// and select 'Feature Development'
-issue:
-// Provide the github ids of the members of the feature team, organized by role.
-// Provide a single id for the 'assignee' role. Use a yaml list for the 'sme' and
-// 'outside-perspective' roles, even if there is only one person in a role.
+- core
+stability-level: default
+issue: https://github.com/wildfly/wildfly-proposals/issues/647
 feature-team:
- developer:
- sme:
-  -
- outside-perspective:
-  -
-// If this issue tracks the promotion to a higher stability level of a previously
-// completed feature, provide the URL of the https://github.com/wildfly/wildfly-proposals/issues
-// issue that was used to track the previous feature.
+ developer: pferraro
 promotes:
-// This should be blank during initial development of a feature. It may be used
-// after the feature is completed if a subsequent issue is field to track promotion
-// of this feature to a higher stability level
 promoted-by:
-OpenAPIVersion: 3.1
-MicroProfileOpenAPIVersion: 4.0
 ---
 = <INSERT TITLE HERE>
 :author:            Your Name
@@ -39,6 +15,8 @@ MicroProfileOpenAPIVersion: 4.0
 :icons:             font
 :idprefix:
 :idseparator:       -
+:OpenAPIVersion: 3.1
+:MicroProfileOpenAPIVersion: 4.0
 
 {%set test = foo %} 
 
@@ -167,5 +145,5 @@ __<Draft verbiage for up to a few sentences on the feature for inclusion in the 
 __Example article: https://www.wildfly.org/news/2024/01/25/WildFly31-Released/.__
 __This content will be edited, so there is no need to make it perfect or discuss what release it appears in.>__ 
 
-[spec]: https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html
-[release_notes]: [https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html#incompatible_changes_40](https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html#release_notes_40)
+[spec]: https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html '4.0'
+[release_notes]: https://download.eclipse.org/microprofile/microprofile-open-api-4.0/microprofile-openapi-spec-4.0.html#release_notes_40 'Release Notes'
