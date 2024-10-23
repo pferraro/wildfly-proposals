@@ -8,6 +8,8 @@ feature-team:
 promotes:
 promoted-by:
 ---
+:OpenAPIVersion: 3.1
+:MicroProfileOpenAPIVersion: 4.0
 = <INSERT TITLE HERE>
 :author:            Your Name
 :email:             your.email@redhat.com
@@ -15,12 +17,8 @@ promoted-by:
 :icons:             font
 :idprefix:
 :idseparator:       -
-:OpenAPIVersion: 3.1
-:MicroProfileOpenAPIVersion: 4.0
 
-{%set test = foo %} 
-
-Upgrade {{ OpenAPIVersion }} to version {{ MicroProfileOpenAPIVersion }} by {{ foo }}.
+Upgrade { OpenAPIVersion } to version { MicroProfileOpenAPIVersion }.
 
 See [Release Notes][release_notes]
 __<The entire document should be one to two pages long. We will write each analysis document as if it is a conversation with a future developer. This requires a good writing style, with full sentences organized into paragraphs. Bullets are acceptable only for visual style, not as an excuse for writing sentence fragments.>__
